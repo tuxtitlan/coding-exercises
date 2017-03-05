@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tuxtitlan/coding-exercises/issues"
   },
-  "homepage": "https://github.com/tuxtitlan/coding-exercises#readme"
+  "homepage": "https://github.com/tuxtitlan/coding-exercises#readme",
+  "dependencies": {
+    "requirefrom": "^0.2.1"
+  }
 }
