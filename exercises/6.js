@@ -11,6 +11,7 @@ function compressString(str, idx, compressed, letterCount) {
   var lc = letterCount || 1;
   
   //If compressed string is greater than original string, return original string
+  //With caveat of getting an extra call to compressString for length check
   if (c.length >= str.length) {
     return str;
   }
@@ -27,7 +28,7 @@ function compressString(str, idx, compressed, letterCount) {
       lc = 1;
     }
     //Continue compressing process
-    return compressString(str, ++i, c, lc);
+    return compressString(str, i + 1, c, lc);
   }
 
   return c;
