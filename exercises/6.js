@@ -1,6 +1,7 @@
 function exercise6() {
-  var testString = 'aabcccccaaa';
-  return compressString(testString);
+  var test = 'aabcccccaaa';
+  console.log('Test case:', test);
+  return compressString(test);
 }
 
 function compressString(str, idx, compressed, letterCount) {

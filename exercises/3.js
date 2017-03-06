@@ -1,9 +1,14 @@
+function exercise3 () {
+  var test = Math.pow(10, 6);
+  console.log('Test case:', test + ' iterations');
+  return piApproximation(test);
+}
+
 // 3. Write a function that computes a Gregory-Leibniz series,
 // a.k.a. approximation of PI, limited to 10^6
 // https://en.wikipedia.org/wiki/Approximations_of_%CF%80#Gregory.E2.80.93Leibniz_series
-function exercise3 () {
+function piApproximation (n) {
   var k = 1;
-  var n = Math.pow(10, 6);
   var result = 0;
   
   //At first tried using a recursive approach, but due to JS
@@ -30,7 +35,7 @@ function summatory (k, n) {
     return result;
   }
 
-  return result + summatory(k++, n);
+  return result + summatory(++k, n);
   */
 
   return result;

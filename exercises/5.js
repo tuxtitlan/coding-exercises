@@ -9,6 +9,8 @@ function exercise5() {
   });
   //Get longest word length
   var maxStrLength = Math.max.apply(Math, strLengths);
+  console.log('Test case:', phraseArray);
+
   //Added placeholders for top and bottom frame
   phraseArray.unshift(emptyStr);
   phraseArray.push(emptyStr);

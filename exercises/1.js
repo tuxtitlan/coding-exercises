@@ -1,5 +1,6 @@
 function exercise7() {
   var test = 'abcdefg';
+  console.log('Test case:', test);
   return getPermutations(test);
 }
 
