@@ -1,4 +1,4 @@
-function exercise7() {
+function exercise1() {
   var test = 'abcdefg';
   console.log('Test case:', test);
   return getPermutations(test);
@@ -45,4 +45,4 @@ function switchPos(arr, pos1, pos2) {
   arr[pos2] = temp;
 }
 
-module.exports = exercise7;
+module.exports = exercise1;
